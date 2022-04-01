@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./tailwind.js"></script>
+    <title>Calculator</title
+  </head>
+  <body onload="confetti()">
+    <div class="w-screen h-screen bg-purple-400 flex justify-center items-center cursor-pointer">
+
+      <button class="card bg-white px-10 py-20 text-center shadow-lg rounded-lg text-6xl font-bold text-gray-600" onclick="confetti({
+        particleCount: 100,
+        startVelocity: 30,
+        spread: 360,
+      
+      })">Happy April Fools <br><span class="text-xs font-light">powered by Axlr8</span> </button>
+
+    </div>
+
+    <script src="./vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        glare: 1,
+      });
+    </script>
+
+    <script src="./confetti.browser.min.js"></script>
+  </body>
+</html>
